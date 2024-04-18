@@ -21,11 +21,11 @@ public class UserDaoHibernateImpl implements UserDao {
             "`AGE` INT, \n" +
             "PRIMARY KEY (`id`));";
     final String dropquery ="DROP TABLE IF EXISTS users";
-    final String removquery ="DELETE FROM users WHERE id = :id ";
     final String cleanquery ="DELETE FROM users";
 
 
     @Override
+
     public void createUsersTable(){
         Transaction transaction = null;
         try {
